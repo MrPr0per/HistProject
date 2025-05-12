@@ -83,27 +83,6 @@
                 <p>Объем данных</p>
             </div>
         </div>
-        <div class="map-container">
-            <h3>Карта цифровой революции</h3>
-            <svg viewBox="0 0 1000 500" class="world-map">
-                <!-- США -->
-                <g class="region" data-modal="usa-modal" data-tooltip="США: Родина интернета и ПК">
-                    <path d="M150,150 C150,100 200,100 250,150 C300,200 200,250 150,200 Z" fill="#3b82f6" />
-                    <text x="200" y="175" font-size="20" fill="white">США</text>
-                </g>
-                <!-- Европа -->
-                <g class="region" data-modal="europe-modal" data-tooltip="Европа: WWW и первые компьютеры">
-                    <path d="M400,100 C400,50 450,50 500,100 C550,150 450,200 400,150 Z" fill="#1e3a8a" />
-                    <text x="450" y="125" font-size="20" fill="white">Европа</text>
-                </g>
-                <!-- Азия -->
-                <g class="region" data-modal="asia-modal" data-tooltip="Азия: Смартфоны и полупроводники">
-                    <path d="M650,150 C650,100 700,100 750,150 C800,200 700,250 650,200 Z" fill="#93c5fd" />
-                    <text x="700" y="175" font-size="20" fill="#1e3a8a">Азия</text>
-                </g>
-            </svg>
-            <div class="tooltip"></div>
-        </div>
     </section>
 
     <!-- Этапы (Таймлайн) -->
@@ -117,7 +96,8 @@
             </div>
             <div class="timeline-item" data-modal="stage2-modal">
                 <h3>1950-е: Транзисторы и языки программирования</h3>
-                <p>Изобретение транзистора, первые языки программирования (Fortran, COBOL), начало коммерческих компьютеров.</p>
+                <p>Изобретение транзистора, первые языки программирования (Fortran, COBOL), начало коммерческих
+                    компьютеров.</p>
                 <button class="timeline-btn">Подробнее</button>
             </div>
             <div class="timeline-item" data-modal="stage3-modal">
@@ -163,18 +143,18 @@
         <h2>Ключевые изобретения</h2>
         <div class="card-container">
             <div class="card" data-modal="transistor-modal">
-                <img src="https://assets.sutori.com/user-uploads/image/a765cb5d-e73d-4133-88ac-8a9ce0bf30f1/1024px-Bardeen_Shockley_Brattain_1948.jpeg" alt="У. Шокли, Дж. Бардин, У. Браттейн">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Replica-of-first-transistor.jpg">
                 <h3>Транзистор (1947)</h3>
                 <p>Создатели: У. Шокли, Дж. Бардин, У. Браттейн (Bell Labs). Заменил лампы, сделав электронику
                     компактной и надежной.</p>
             </div>
             <div class="card" data-modal="internet-modal">
-                <img src="https://habrastorage.org/getpro/habr/upload_files/c5b/a79/44a/c5ba7944a2ab76bc739bfda20a59f335.jpg" alt="Винт Серф, Боб Кан">
+                <img src="https://cdn.britannica.com/83/192883-050-CF2D9B6D/diagram-Arpanet-September-1974.jpg">
                 <h3>Интернет (1969)</h3>
                 <p>Создатели: DARPA, Винт Серф, Боб Кан. ARPANET соединил компьютеры, став основой глобальной сети.</p>
             </div>
             <div class="card" data-modal="microprocessor-modal">
-                <img src="https://i.ibb.co/prntzmJG/image.png" alt="Тед Хофф">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_C4004.jpg">
                 <h3>Микропроцессор (1971)</h3>
                 <p>Создатель: Intel (Тед Хофф). Первый чип, объединивший функции процессора, основа современных ПК.</p>
             </div>
@@ -184,24 +164,24 @@
                 <p>Создатель: Минобороны США. Изменила навигацию, логистику и геолокацию.</p>
             </div>
             <div class="card" data-modal="pc-modal">
-                <img src="https://hackaday.com/wp-content/uploads/2024/06/pc_91117b.png" alt="Филипп Эстридж">
+                <img src="https://engineer.yadro.com/wp-content/uploads/2024/08/image_ibm_cover.jpg">
                 <h3>Персональный компьютер (1981)</h3>
                 <p>Создатель: IBM (Филипп Эстридж). Стал стандартом для офисов и домов, популяризировал вычисления.</p>
             </div>
             <div class="card" data-modal="www-modal">
-                <img src="" alt="Тим Бернерс-Ли">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/960px-Internet_map_1024.jpg">
                 <h3>Всемирная паутина (1989)</h3>
                 <p>Создатель: Тим Бернерс-Ли. Сделала интернет доступным через браузеры и гиперссылки.</p>
             </div>
             <div class="card" data-modal="smartphone-modal">
-                <img src="" alt="Стив Джобс">
+                <img src="https://cms.octagon.media/_clients/591571c7-9a4a-4a42-9059-6db42dee462b/files/pics/920x613/2023_07_17_iphone_first_generation_8_5044_1689621363.jpg">
                 <h3>Смартфон (2007)</h3>
                 <p>Создатель: Apple (Стив Джобс). Объединил телефон, ПК и камеру, изменив образ жизни.</p>
             </div>
             <div class="card" data-modal="ai-modal">
-                <img src="https://cerebium.s3.regru.cloud/0b266c0d-3d6c-4d97-97e9-38209179782e.webp" alt="Сэм Альтман">
+                <img src="https://miro.medium.com/v2/resize:fit:447/1*G0CAXQqb250tgBMeeVvN6g.png">
                 <h3>Искусственный интеллект (2010-е)</h3>
-                <p>Создатели: Google, OpenAI (Сэм Альтман). Нейросети автоматизируют задачи и анализируют данные.</p>
+                <p>Создатели: Google, OpenAI. Нейросети автоматизируют задачи и анализируют данные.</p>
             </div>
         </div>
     </section>
@@ -215,38 +195,69 @@
                 <h3>Алан Тьюринг</h3>
                 <p>Основатель информатики, создал концепцию вычислительной машины, взломал "Энигму".</p>
             </div>
+            <div class="card" data-modal="shockley-modal">
+                <img src="https://assets.sutori.com/user-uploads/image/a765cb5d-e73d-4133-88ac-8a9ce0bf30f1/1024px-Bardeen_Shockley_Brattain_1948.jpeg"
+                     alt="У. Шокли, Дж. Бардин, У. Браттейн">
+                <h3>Шокли, Бардин, Браттейн</h3>
+                <p> Создатели транзисторов. Заменили лампы, сделав электронику
+                    компактной и надежной.</p>
+            </div>
+            <div class="card" data-modal="ted-hoff-modal">
+                <img src="https://i.ibb.co/prntzmJG/image.png" alt="Тед Хофф">
+                <h3>Тед Хофф</h3>
+                <p>Один из изобретателей микропроцессора (Intel 4004) - основы современных ПК.</p>
+            </div>
+            <div class="card" data-modal="don-estridge-modal">
+                <img src="https://hackaday.com/wp-content/uploads/2024/06/pc_91117b.png" alt="Филипп Эстридж">
+                <h3>Филипп Эстридж</h3>
+                <p>Руководитель команды разработчиков IBM PC (1981), ставшего стандартом для индустрии персональных
+                    компьютеров.</p>
+            </div>
+            <div class="card" data-modal="vint-cerf-modal">
+                <img src="https://habrastorage.org/getpro/habr/upload_files/c5b/a79/44a/c5ba7944a2ab76bc739bfda20a59f335.jpg"
+                     alt="Винт Серф, Боб Кан">
+                <h3>Винт Серф, Боб Кан</h3>
+                <p>Разработали протоколы TCP/IP (1974), ставшие основой современного Интернета. </p>
+            </div>
             <div class="card" data-modal="jobs-modal">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/1200px-Steve_Jobs_Headshot_2010-CROP.jpg" alt="Стив Джобс">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/1200px-Steve_Jobs_Headshot_2010-CROP.jpg"
+                     alt="Стив Джобс">
                 <h3>Стив Джобс</h3>
                 <p>Сооснователь Apple, разработал iPhone и Macintosh, изменил дизайн технологий.</p>
             </div>
             <div class="card" data-modal="gates-modal">
-                <img src="https://img.gazeta.ru/files3/194/13908194/20010130_zaf_s03_001-pic_32ratio_900x600-900x600-94354.jpg" alt="Билл Гейтс">
+                <img src="https://img.gazeta.ru/files3/194/13908194/20010130_zaf_s03_001-pic_32ratio_900x600-900x600-94354.jpg"
+                     alt="Билл Гейтс">
                 <h3>Билл Гейтс</h3>
                 <p>Основатель Microsoft, создал Windows, сделал ПК массовым продуктом.</p>
             </div>
             <div class="card" data-modal="berners-lee-modal">
-                <img src="https://s.digitalocean.ru/627/upload/1647251140_1647076204_9407011_31A4at144dpi.jpg" alt="Тим Бернерс-Ли">
+                <img src="https://s.digitalocean.ru/627/upload/1647251140_1647076204_9407011_31A4at144dpi.jpg"
+                     alt="Тим Бернерс-Ли">
                 <h3>Тим Бернерс-Ли</h3>
                 <p>Создатель WWW, сделал интернет доступным через браузеры.</p>
             </div>
             <div class="card" data-modal="intel-modal">
-                <img src="https://www.ixbt.com/img/n1/news/2019/10/6/Intel-Xeon-Roadmap_Ice-Lake_Sapphire-Rapids_Granite-Rapids_5-2060x1159_large.png" alt="Intel">
+                <img src="https://www.ixbt.com/img/n1/news/2019/10/6/Intel-Xeon-Roadmap_Ice-Lake_Sapphire-Rapids_Granite-Rapids_5-2060x1159_large.png"
+                     alt="Intel">
                 <h3>Intel</h3>
                 <p>Лидер в производстве микропроцессоров, основа современных компьютеров.</p>
             </div>
             <div class="card" data-modal="google-modal">
-                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HOLOCENE_Thumbnail.width-1300.png" alt="Google">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HOLOCENE_Thumbnail.width-1300.png"
+                     alt="Google">
                 <h3>Google</h3>
                 <p>Изменил доступ к информации через поиск, Android и ИИ.</p>
             </div>
             <div class="card" data-modal="openai-modal">
-                <img src="https://www.investopedia.com/thmb/1ISy5cV4bsCPUaeGX5Niyj59bvk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2153474140-d0f39e84eca64147ba98c6766ee00bc6.jpg" alt="OpenAI">
+                <img src="https://www.investopedia.com/thmb/1ISy5cV4bsCPUaeGX5Niyj59bvk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2153474140-d0f39e84eca64147ba98c6766ee00bc6.jpg"
+                     alt="OpenAI">
                 <h3>OpenAI</h3>
                 <p>Пионер ИИ, создатель ChatGPT, продвинул обработку языка.</p>
             </div>
             <div class="card" data-modal="musk-modal">
-                <img src="https://img.gazeta.ru/files3/925/18057925/2023-12-07T194233Z_1897288979_RC2IS4AC6YFX_RTRMADP_3_USA-COURT-MUSK-SEC-pic4_zoom-1500x1500-66767.jpg" alt="Илон Маск">
+                <img src="https://img.gazeta.ru/files3/925/18057925/2023-12-07T194233Z_1897288979_RC2IS4AC6YFX_RTRMADP_3_USA-COURT-MUSK-SEC-pic4_zoom-1500x1500-66767.jpg"
+                     alt="Илон Маск">
                 <h3>Илон Маск</h3>
                 <p>Основатель Tesla, Neuralink, развивает ИИ и автономные технологии.</p>
             </div>
@@ -306,7 +317,8 @@
         <h2>Источники</h2>
         <ul class="source-list">
             <li>Айзексон, У. (2014). Инноваторы: Как группа хакеров, гениев и гиков совершила цифровую революцию.
-                Москва: АСТ.</li>
+                Москва: АСТ.
+            </li>
             <li>Кэмпбелл-Келли, М. (2003). История компьютеров. Лондон: Oxford University Press.</li>
             <li>Статья: "История интернета" (2020). Scientific American.</li>
             <li>Биография Стива Джобса (2011). Автор: У. Айзексон. Москва: АСТ.</li>
@@ -347,96 +359,112 @@
                 цифровую экосистему.</p>
         </div>
     </div>
-<!-- Модальные окна для этапов -->
-<div class="modal" id="stage1-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>1940-е: Первые компьютеры</h3>
-        <p>Эпоха гигантских электронных машин, работавших на вакуумных лампах. ENIAC (1945) весил 27 тонн и выполнял 5000 операций в секунду. Colossus (1943) использовался для взлома немецких шифров во время Второй мировой войны. Программирование осуществлялось переключением проводов и перфокартами.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/ENIAC_Penn1.jpg/1280px-ENIAC_Penn1.jpg" alt="ENIAC (1945)">
-        <p class="caption">ENIAC (1945)</p>
+    <!-- Модальные окна для этапов -->
+    <div class="modal" id="stage1-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1940-е: Первые компьютеры</h3>
+            <p>Эпоха гигантских электронных машин, работавших на вакуумных лампах. ENIAC (1945) весил 27 тонн и выполнял
+                5000 операций в секунду. Colossus (1943) использовался для взлома немецких шифров во время Второй
+                мировой войны. Программирование осуществлялось переключением проводов и перфокартами.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/ENIAC_Penn1.jpg/1280px-ENIAC_Penn1.jpg"
+                 alt="ENIAC (1945)">
+            <p class="caption">ENIAC (1945)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage2-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>1950-е: Транзисторы и языки программирования</h3>
-        <p>Изобретение транзистора (1947) революционизировало электронику. Появились первые языки программирования высокого уровня - Fortran (1957) и COBOL (1959). IBM 704 (1954) - первый массовый компьютер с поддержкой арифметики с плавающей запятой. Начало коммерческого использования компьютеров в бизнесе.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg/280px-Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg" alt="IBM 704 (1954)">
-        <p class="caption">IBM 704 (1954)</p>
+    <div class="modal" id="stage2-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1950-е: Транзисторы и языки программирования</h3>
+            <p>Изобретение транзистора (1947) революционизировало электронику. Появились первые языки программирования
+                высокого уровня - Fortran (1957) и COBOL (1959). IBM 704 (1954) - первый массовый компьютер с поддержкой
+                арифметики с плавающей запятой. Начало коммерческого использования компьютеров в бизнесе.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg/280px-Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg"
+                 alt="IBM 704 (1954)">
+            <p class="caption">IBM 704 (1954)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage3-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>1960-е: Интегральные схемы и сети</h3>
-        <p>Изобретение интегральных схем (1958) позволило уменьшить размеры компьютеров. Создание ARPANET (1969) - предшественника интернета. Появление первых операционных систем. IBM System/360 (1964) - семейство совместимых компьютеров. Разработка языка BASIC (1964) для обучения программированию.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/IBM_System_360_model_30_profile.agr.jpg" alt="IBM System/360 (1964)">
-        <p class="caption">IBM System/360 (1964)</p>
+    <div class="modal" id="stage3-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1960-е: Интегральные схемы и сети</h3>
+            <p>Изобретение интегральных схем (1958) позволило уменьшить размеры компьютеров. Создание ARPANET (1969) -
+                предшественника интернета. Появление первых операционных систем. IBM System/360 (1964) - семейство
+                совместимых компьютеров. Разработка языка BASIC (1964) для обучения программированию.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/IBM_System_360_model_30_profile.agr.jpg"
+                 alt="IBM System/360 (1964)">
+            <p class="caption">IBM System/360 (1964)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage4-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>1970-е: Персональные компьютеры</h3>
-        <p>Altair 8800 (1975) - первый массовый ПК. Apple I (1976) и Apple II (1977) - первые успешные домашние компьютеры. Создание Microsoft (1975) и Apple (1976). Разработка языков C (1972) и SQL (1974). Появление первых микропроцессоров (Intel 4004, 1971).</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Apple_II-IMG_7064.jpg" alt="Apple II (1977)">
-        <p class="caption">Apple II (1977)</p>
+    <div class="modal" id="stage4-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1970-е: Персональные компьютеры</h3>
+            <p>Altair 8800 (1975) - первый массовый ПК. Apple I (1976) и Apple II (1977) - первые успешные домашние
+                компьютеры. Создание Microsoft (1975) и Apple (1976). Разработка языков C (1972) и SQL (1974). Появление
+                первых микропроцессоров (Intel 4004, 1971).</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Apple_II-IMG_7064.jpg" alt="Apple II (1977)">
+            <p class="caption">Apple II (1977)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage5-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>1980-е: Компьютеры для всех</h3>
-        <p>IBM PC (1981) стал отраслевым стандартом. Macintosh (1984) представил графический интерфейс и мышь. Microsoft Windows 1.0 (1985). Появление компакт-дисков (1982). Развитие локальных сетей. Первые ноутбуки (Osborne 1, 1981). Создание интернет-доменов (.com, 1985).</p>
-        <img src="https://images.computerhistory.org/revonline/images/102716228p-03-01.jpg?w=600" alt="IBM PC (1981)">
-        <p class="caption">IBM PC (1981)</p>
+    <div class="modal" id="stage5-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1980-е: Компьютеры для всех</h3>
+            <p>IBM PC (1981) стал отраслевым стандартом. Macintosh (1984) представил графический интерфейс и мышь.
+                Microsoft Windows 1.0 (1985). Появление компакт-дисков (1982). Развитие локальных сетей. Первые ноутбуки
+                (Osborne 1, 1981). Создание интернет-доменов (.com, 1985).</p>
+            <img src="https://images.computerhistory.org/revonline/images/102716228p-03-01.jpg?w=600"
+                 alt="IBM PC (1981)">
+            <p class="caption">IBM PC (1981)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage6-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>1990-е: Интернет-революция</h3>
-        <p>Всемирная паутина (WWW, 1991) сделала интернет доступным. Первые браузеры (Mosaic, Netscape). Поисковые системы (Yahoo, 1994; Google, 1998). Электронная коммерция (Amazon, 1995; eBay, 1995). Мобильные телефоны начинают набирать популярность. Linux (1991) - начало open-source движения.</p>
-        <img src="https://elgoog.im/assets/p/google1998/google-in-1998.png" alt="Google (1998)">
-        <p class="caption">Google (1998)</p>
+    <div class="modal" id="stage6-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1990-е: Интернет-революция</h3>
+            <p>Всемирная паутина (WWW, 1991) сделала интернет доступным. Первые браузеры (Mosaic, Netscape). Поисковые
+                системы (Yahoo, 1994; Google, 1998). Электронная коммерция (Amazon, 1995; eBay, 1995). Мобильные
+                телефоны начинают набирать популярность. Linux (1991) - начало open-source движения.</p>
+            <img src="https://elgoog.im/assets/p/google1998/google-in-1998.png" alt="Google (1998)">
+            <p class="caption">Google (1998)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage7-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>2000-е: Мобильная и социальная эра</h3>
-        <p>iPhone (2007) начал смартфонную революцию. Социальные сети (Facebook, 2004; Twitter, 2006). Облачные вычисления (AWS, 2006). Web 2.0 - интерактивные сайты. Википедия (2001). YouTube (2005). Android (2008). Широкое распространение Wi-Fi и мобильного интернета.</p>
-        <img src="https://www.macworld.com/wp-content/uploads/2024/10/original-iphone-2007-1.jpg?quality=50&strip=all" alt="iPhone (2007)">
-        <p class="caption">iPhone (2007)</p>
+    <div class="modal" id="stage7-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>2000-е: Мобильная и социальная эра</h3>
+            <p>iPhone (2007) начал смартфонную революцию. Социальные сети (Facebook, 2004; Twitter, 2006). Облачные
+                вычисления (AWS, 2006). Web 2.0 - интерактивные сайты. Википедия (2001). YouTube (2005). Android (2008).
+                Широкое распространение Wi-Fi и мобильного интернета.</p>
+            <img src="https://www.macworld.com/wp-content/uploads/2024/10/original-iphone-2007-1.jpg?quality=50&strip=all"
+                 alt="iPhone (2007)">
+            <p class="caption">iPhone (2007)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage8-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>2010-е: Большие данные и IoT</h3>
-        <p>Искусственный интеллект (Siri, 2011; Alexa, 2014). Интернет вещей (IoT). Большие данные и аналитика. Блокчейн и криптовалюты (Bitcoin, 2009; Ethereum, 2015). Глубокое обучение (AlphaGo, 2016). 5G сети. Виртуальная и дополненная реальность (Oculus Rift, 2012; Pokémon Go, 2016).</p>
-        <img src="https://miro.medium.com/v2/resize:fit:1200/1*7PoZafFLEVXQiseVx5y4cw.jpeg" alt="AlphaGo (2016)">
-        <p class="caption">AlphaGo (2016)</p>
+    <div class="modal" id="stage8-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>2010-е: Большие данные и IoT</h3>
+            <p>Искусственный интеллект (Siri, 2011; Alexa, 2014). Интернет вещей (IoT). Большие данные и аналитика.
+                Блокчейн и криптовалюты (Bitcoin, 2009; Ethereum, 2015). Глубокое обучение (AlphaGo, 2016). 5G сети.
+                Виртуальная и дополненная реальность (Oculus Rift, 2012; Pokémon Go, 2016).</p>
+            <img src="https://miro.medium.com/v2/resize:fit:1200/1*7PoZafFLEVXQiseVx5y4cw.jpeg" alt="AlphaGo (2016)">
+            <p class="caption">AlphaGo (2016)</p>
+        </div>
     </div>
-</div>
-
-<div class="modal" id="stage9-modal">
-    <div class="modal-content">
-        <span class="modal-close">×</span>
-        <h3>2020-е: ИИ и квантовые вычисления</h3>
-        <p>Генеративный ИИ (ChatGPT, 2022; DALL-E). Квантовые компьютеры (Google Sycamore, 2019). Метавселенные. Автономные системы и роботы. ИИ в медицине и науке. Этика технологий и регулирование ИИ. Устойчивые вычисления. Персональные ИИ-ассистенты.</p>
-        <img src="https://azure.microsoft.com/en-us/blog/quantum/wp-content/uploads/2025/02/majorana1_1260x708_v2.jpg" alt="Majorana 1 (2025)">
-        <p class="caption">Majorana 1 (2025)</p>
+    <div class="modal" id="stage9-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>2020-е: ИИ и квантовые вычисления</h3>
+            <p>Генеративный ИИ (ChatGPT, 2022; DALL-E). Квантовые компьютеры (Google Sycamore, 2019). Метавселенные.
+                Автономные системы и роботы. ИИ в медицине и науке. Этика технологий и регулирование ИИ. Устойчивые
+                вычисления. Персональные ИИ-ассистенты.</p>
+            <img src="https://azure.microsoft.com/en-us/blog/quantum/wp-content/uploads/2025/02/majorana1_1260x708_v2.jpg"
+                 alt="Majorana 1 (2025)">
+            <p class="caption">Majorana 1 (2025)</p>
+        </div>
     </div>
-</div>
     <div class="modal" id="stat7-modal">
         <div class="modal-content">
             <span class="modal-close">×</span>
@@ -465,6 +493,7 @@
             <p>К 2025 году ежегодно создается 4.8 зеттабайт данных, что эквивалентно 4.8 трлн гигабайт.</p>
         </div>
     </div>
+
     <div class="modal" id="usa-modal">
         <div class="modal-content">
             <span class="modal-close">×</span>
@@ -491,6 +520,7 @@
                 Япония внесла вклад через Sony и Nintendo, а Китай продвигает ИИ и 5G, формируя будущее технологий.</p>
         </div>
     </div>
+
     <div class="modal" id="stage1-modal">
         <div class="modal-content">
             <span class="modal-close">×</span>
@@ -606,12 +636,41 @@
                 картографии и военных операций.</p>
         </div>
     </div>
+
     <div class="modal" id="turing-modal">
         <div class="modal-content">
             <span class="modal-close">×</span>
             <h3>Алан Тьюринг</h3>
             <p>Его работа над машиной Тьюринга создала теоретическую основу для современных компьютеров. Взлом "Энигмы"
                 сократил Вторую мировую войну на годы.</p>
+        </div>
+    </div>
+    <div class="modal" id="shockley-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Шокли, Бардин, Браттейн</h3>
+            <p>Изобретение транзистора в 1947 году революционизировало электронику, заменив громоздкие вакуумные лампы и сделав возможным создание компактных и энергоэффективных устройств.</p>
+        </div>
+    </div>
+    <div class="modal" id="ted-hoff-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Тед Хофф</h3>
+            <p>Как главный архитектор первого микропроцессора Intel 4004, Хофф заложил основу для современной микроэлектроники, позволив создать персональные компьютеры.</p>
+        </div>
+    </div>
+    <div class="modal" id="don-estridge-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Филипп Эстридж</h3>
+            <p>Возглавляя команду IBM PC, Эстридж создал первый массовый персональный компьютер, установив стандарты для индустрии и сделав ПК доступными для бизнеса и домашнего использования.</p>
+        </div>
+    </div>
+    <div class="modal" id="vint-cerf-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Винт Серф, Боб Кан</h3>
+            <p>Разработав протоколы TCP/IP, эти ученые создали фундаментальную архитектуру интернета, позволившую различным компьютерным сетям объединиться в глобальную систему.</p>
         </div>
     </div>
     <div class="modal" id="jobs-modal">
@@ -664,7 +723,7 @@
     </div>
     <div class="modal" id="musk-modal">
         <div class="modal-content">
-            <spanstiftung class="modal-close">×</span>
+            <span class="modal-close">×</span>
                 <h3>Илон Маск</h3>
                 <p>Neuralink и Starlink Маск стремятся соединить мозг с компьютерами и обеспечить глобальный интернет,
                     раздвигая границы технологий.</p>
