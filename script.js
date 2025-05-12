@@ -143,3 +143,11 @@ sections.forEach(section => {
     section.classList.add('hidden');
     observer.observe(section);
 });
+
+// плейсхолдер для картинок в случае ошибки
+document.querySelectorAll('img').forEach(img => {
+    // Добавляем наш обработчик, не перезаписывая существующие
+    img.addEventListener('error', function (e) {
+        e.target.src = 'https://i.ibb.co/230DDV3p/image.png';
+    });
+});
