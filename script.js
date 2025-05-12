@@ -7,22 +7,21 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 
-// Универсальный обработчик открытия модальных окон
+// Открытие модальных окон
 document.querySelectorAll('[data-modal]').forEach(item => {
     item.addEventListener('click', () => {
         const modalId = item.dataset.modal;
-        document.getElementById(modalId).classList.add('active');
+        const modal = document.getElementById(modalId);
+        modal.classList.add('active');
     });
 });
 
 // Закрытие модальных окон
 document.querySelectorAll('.modal-close').forEach(closeBtn => {
     closeBtn.addEventListener('click', () => {
-        const modal = closeBtn.closest('.modal');
-        modal.classList.remove('active');
-        
+        closeBtn.closest('.modal').classList.remove('active');
         // Сброс ответов теста при закрытии результата
-        if (modal.id === 'quiz-result-modal') {
+        if (closeBtn.closest('.modal').id === 'quiz-result-modal') {
             document.querySelectorAll('.question input').forEach(input => {
                 input.checked = false;
             });
@@ -35,6 +34,7 @@ document.querySelectorAll('.modal').forEach(modal => {
     modal.addEventListener('click', e => {
         if (e.target === modal) {
             modal.classList.remove('active');
+            // Сброс ответов теста при закрытии результата
             if (modal.id === 'quiz-result-modal') {
                 document.querySelectorAll('.question input').forEach(input => {
                     input.checked = false;
@@ -60,6 +60,7 @@ regions.forEach(region => {
         tooltip.style.display = 'none';
     });
 
+    // Поддержка касаний для мобильных устройств
     region.addEventListener('touchstart', e => {
         e.preventDefault();
         tooltip.style.display = 'block';
@@ -69,7 +70,7 @@ regions.forEach(region => {
         tooltip.style.top = `${touch.pageY + 10}px`;
         setTimeout(() => {
             tooltip.style.display = 'none';
-        }, 2000);
+        }, 2000); // Подсказка исчезает через 2 секунды
     });
 });
 
@@ -94,13 +95,11 @@ quizBtn.addEventListener('click', () => {
 
     const counts = {
         '1940s': 0,
-        '1950s': 0,
+        '1950s-60s': 0,
         '1960s': 0,
-        '1970s': 0,
+        '1970s-80s': 0,
         '1980s': 0,
-        '1990s': 0,
         '2000s': 0,
-        '2010s': 0,
         '2020s': 0
     };
 
@@ -119,40 +118,32 @@ quizBtn.addEventListener('click', () => {
 
     const results = {
         '1940s': {
-            text: '1940-е: Эра первых компьютеров. Вы цените фундаментальные основы цифрового мира и восхищаетесь инженерами, создававшими первые вычислительные машины размером с комнату.',
-            image: 'https://via.placeholder.com/300x200?text=1940s+ENIAC'
+            text: '1940-е: Эра зарождения компьютеров. Ты восхищаешься пионерами, которые создали первые вычислительные машины, такие как ENIAC, и заложили основы цифровой эры. Твоя страсть к истокам технологий делает тебя исследователем фундаментальных открытий, которые изменили мир.',
+            image: 'https://via.placeholder.com/300x200'
         },
-        '1950s': {
-            text: '1950-е: Эпоха транзисторов. Вам близки инновации, сделавшие электронику компактнее и надежнее, что открыло путь к созданию современных компьютеров.',
-            image: 'https://via.placeholder.com/300x200?text=1950s+Transistors'
+        '1950s-60s': {
+            text: '1950-е–1960-е: Эпоха транзисторов и первых сетей. Ты ценишь переход от громоздких ламп к компактным транзисторам и рождение сетей, таких как ARPANET. Твое любопытство к инновациям, связавшим мир, делает тебя мечтателем о глобальной связности.',
+            image: 'https://via.placeholder.com/300x200'
         },
         '1960s': {
-            text: '1960-е: Время интегральных схем и сетей. Вы вдохновляетесь технологиями, которые позволили компьютерам "разговаривать" друг с другом и заложили основы интернета.',
-            image: 'https://via.placeholder.com/300x200?text=1960s+ARPANET'
+            text: '1960-е: Время миниатюризации и сетей. Ты вдохновляешься изобретением интегральных схем и первыми шагами интернета. Твоя любовь к компактным технологиям и сетевым решениям говорит о твоем стремлении к эффективности и связи.',
+            image: 'https://via.placeholder.com/300x200'
         },
-        '1970s': {
-            text: '1970-е: Зарождение персональных компьютеров. Вам нравится эпоха, когда компьютеры начали появляться в домах и офисах, перестав быть прерогативой крупных организаций.',
-            image: 'https://via.placeholder.com/300x200?text=1970s+Altair'
+        '1970s-80s': {
+            text: '1970-е–1980-е: Золотой век персональных компьютеров. Ты увлечен эпохой, когда ПК, такие как IBM PC и Macintosh, стали доступны каждому. Твой интерес к массовым технологиям и интерфейсам делает тебя сторонником демократизации инноваций.',
+            image: 'https://via.placeholder.com/300x200'
         },
         '1980s': {
-            text: '1980-е: Расцвет ПК. Вы цените время, когда компьютеры стали по-настоящему массовыми благодаря IBM PC и Macintosh, а графические интерфейсы сделали их доступными для всех.',
-            image: 'https://via.placeholder.com/300x200?text=1980s+Macintosh'
-        },
-        '1990s': {
-            text: '1990-е: Интернет-революция. Вам близка эпоха, когда Всемирная паутина соединила мир, а поисковые системы сделали информацию доступной в один клик.',
-            image: 'https://via.placeholder.com/300x200?text=1990s+WWW'
+            text: '1980-е: Эра персональных компьютеров. Ты обожаешь время, когда компьютеры вошли в дома и офисы, а графические интерфейсы сделали их удобными. Твоя страсть к доступным технологиям показывает твое желание сделать мир проще и продуктивнее.',
+            image: 'https://via.placeholder.com/300x200'
         },
         '2000s': {
-            text: '2000-е: Мобильная и социальная революция. Вы живете в ритме смартфонов и соцсетей, которые изменили способ нашего общения и потребления информации.',
-            image: 'https://via.placeholder.com/300x200?text=2000s+iPhone'
-        },
-        '2010s': {
-            text: '2010-е: Эра больших данных и IoT. Вам интересны технологии, которые научили машины понимать мир вокруг нас и соединили миллиарды устройств в единую сеть.',
-            image: 'https://via.placeholder.com/300x200?text=2010s+AI'
+            text: '2000-е: Мобильная революция и интернет. Ты живешь в ритме смартфонов, соцсетей и облачных технологий. Твой энтузиазм к iPhone и Facebook отражает твое стремление к мобильности, общению и мгновенному доступу к информации.',
+            image: 'https://via.placeholder.com/300x200'
         },
         '2020s': {
-            text: '2020-е: Век искусственного интеллекта. Вы устремлены в будущее, где ИИ становится неотъемлемой частью нашей жизни, а квантовые компьютеры открывают новые горизонты.',
-            image: 'https://via.placeholder.com/300x200?text=2020s+Quantum'
+            text: '2020-е: Эпоха ИИ и квантовых технологий. Ты устремлен в будущее, где ИИ и квантовые компьютеры переопределяют возможности. Твоя страсть к автоматизации и интеллектуальным системам делает тебя визионером, готовым к новым горизонтам технологий.',
+            image: 'https://via.placeholder.com/300x200'
         }
     };
 
