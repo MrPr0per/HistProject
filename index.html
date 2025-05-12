@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая революция: этапы, изобретения, участники</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="logo">Цифровая революция</div>
+        <ul class="nav-links">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#intro">История</a></li>
+            <li><a href="#stages">Этапы</a></li>
+            <li><a href="#inventions">Изобретения</a></li>
+            <li><a href="#participants">Участники</a></li>
+            <li><a href="#quiz">Тест</a></li>
+            <li><a href="#sources">Источники</a></li>
+        </ul>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Цифровая революция</h1>
+            <p>Хроника цифровой эры: от первых вычислений к интеллекту будущего</p>
+            <a href="#intro" class="btn">Начать путешествие</a>
+        </div>
+    </section>
+
+    <!-- История -->
+    <section id="intro" class="intro">
+        <h2>История цифровой революции</h2>
+        <p>Цифровая революция началась в середине XX века, когда громоздкие вычислительные машины заменили механические
+            расчеты. От первых компьютеров, занимавших целые комнаты, до современных нейросетей и квантовых технологий —
+            этот процесс радикально изменил общество, экономику, науку и культуру, открыв эру глобальной связанности и
+            интеллектуальной автоматизации.</p>
+        <button class="intro-btn" data-modal="intro-modal">Подробнее</button>
+        <div class="stats">
+            <div class="stat" data-modal="stat1-modal">
+                <h3>5.4 млрд</h3>
+                <p>Пользователей интернета</p>
+            </div>
+            <div class="stat" data-modal="stat2-modal">
+                <h3>8.5 млрд</h3>
+                <p>Подключенных устройств</p>
+            </div>
+            <div class="stat" data-modal="stat3-modal">
+                <h3>1945</h3>
+                <p>Первый компьютер</p>
+            </div>
+            <div class="stat" data-modal="stat4-modal">
+                <h3>1969</h3>
+                <p>Рождение интернета</p>
+            </div>
+            <div class="stat" data-modal="stat5-modal">
+                <h3>2007</h3>
+                <p>Эра смартфонов</p>
+            </div>
+            <div class="stat" data-modal="stat6-modal">
+                <h3>2020-е</h3>
+                <p>Взлет ИИ</p>
+            </div>
+            <div class="stat" data-modal="stat7-modal">
+                <h3>90%</h3>
+                <p>Цифровизация бизнеса</p>
+            </div>
+            <div class="stat" data-modal="stat8-modal">
+                <h3>1 трлн</h3>
+                <p>Транзисторов в чипе</p>
+            </div>
+            <div class="stat" data-modal="stat9-modal">
+                <h3>1956</h3>
+                <p>Первый жесткий диск</p>
+            </div>
+            <div class="stat" data-modal="stat10-modal">
+                <h3>4.8 зтт</h3>
+                <p>Объем данных</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <h3>Карта цифровой революции</h3>
+            <svg viewBox="0 0 1000 500" class="world-map">
+                <!-- США -->
+                <g class="region" data-modal="usa-modal" data-tooltip="США: Родина интернета и ПК">
+                    <path d="M150,150 C150,100 200,100 250,150 C300,200 200,250 150,200 Z" fill="#3b82f6" />
+                    <text x="200" y="175" font-size="20" fill="white">США</text>
+                </g>
+                <!-- Европа -->
+                <g class="region" data-modal="europe-modal" data-tooltip="Европа: WWW и первые компьютеры">
+                    <path d="M400,100 C400,50 450,50 500,100 C550,150 450,200 400,150 Z" fill="#1e3a8a" />
+                    <text x="450" y="125" font-size="20" fill="white">Европа</text>
+                </g>
+                <!-- Азия -->
+                <g class="region" data-modal="asia-modal" data-tooltip="Азия: Смартфоны и полупроводники">
+                    <path d="M650,150 C650,100 700,100 750,150 C800,200 700,250 650,200 Z" fill="#93c5fd" />
+                    <text x="700" y="175" font-size="20" fill="#1e3a8a">Азия</text>
+                </g>
+            </svg>
+            <div class="tooltip"></div>
+        </div>
+    </section>
+
+    <!-- Этапы (Таймлайн) -->
+    <section id="stages" class="section">
+        <h2>Этапы цифровой революции</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-modal="stage1-modal">
+                <h3>1940-е: Первые компьютеры</h3>
+                <p>ENIAC, Colossus - первые электронные вычислительные машины для военных и научных расчетов.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage2-modal">
+                <h3>1950-е: Транзисторы и языки программирования</h3>
+                <p>Изобретение транзистора, первые языки программирования (Fortran, COBOL), начало коммерческих компьютеров.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage3-modal">
+                <h3>1960-е: Интегральные схемы и сети</h3>
+                <p>Миниатюризация электроники, создание ARPANET - предшественника интернета, первые ОС.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage4-modal">
+                <h3>1970-е: Персональные компьютеры</h3>
+                <p>Altair 8800, Apple I, IBM System/370. Развитие микропроцессоров и начало эры ПК.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage5-modal">
+                <h3>1980-е: Компьютеры для всех</h3>
+                <p>IBM PC, Macintosh, Microsoft Windows. Графические интерфейсы и массовая компьютеризация.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage6-modal">
+                <h3>1990-е: Интернет-революция</h3>
+                <p>WWW, браузеры, поисковые системы. Расцвет интернет-компаний (Amazon, Google, Yahoo).</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage7-modal">
+                <h3>2000-е: Мобильная и социальная эра</h3>
+                <p>iPhone, Android, социальные сети. Облачные вычисления и Web 2.0.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage8-modal">
+                <h3>2010-е: Большие данные и IoT</h3>
+                <p>Искусственный интеллект, интернет вещей, блокчейн. Глубокое обучение и нейросети.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+            <div class="timeline-item" data-modal="stage9-modal">
+                <h3>2020-е: ИИ и квантовые вычисления</h3>
+                <p>Генеративный ИИ (ChatGPT), квантовые компьютеры, метавселенные. Автономные системы.</p>
+                <button class="timeline-btn">Подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Изобретения -->
+    <section id="inventions" class="section">
+        <h2>Ключевые изобретения</h2>
+        <div class="card-container">
+            <div class="card" data-modal="transistor-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Транзистор">
+                <h3>Транзистор (1947)</h3>
+                <p>Создатели: У. Шокли, Дж. Бардин, У. Браттейн (Bell Labs). Заменил лампы, сделав электронику
+                    компактной и надежной.</p>
+            </div>
+            <div class="card" data-modal="microprocessor-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Микропроцессор">
+                <h3>Микропроцессор (1971)</h3>
+                <p>Создатель: Intel (Тед Хофф). Первый чип, объединивший функции процессора, основа современных ПК.</p>
+            </div>
+            <div class="card" data-modal="pc-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Персональный компьютер">
+                <h3>Персональный компьютер (1981)</h3>
+                <p>Создатель: IBM. Стал стандартом для офисов и домов, популяризировал вычисления.</p>
+            </div>
+            <div class="card" data-modal="internet-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Интернет">
+                <h3>Интернет (1969)</h3>
+                <p>Создатели: DARPA, Винт Серф, Боб Кан. ARPANET соединил компьютеры, став основой глобальной сети.</p>
+            </div>
+            <div class="card" data-modal="smartphone-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Смартфон">
+                <h3>Смартфон (2007)</h3>
+                <p>Создатель: Apple (Стив Джобс). Объединил телефон, ПК и камеру, изменив образ жизни.</p>
+            </div>
+            <div class="card" data-modal="ai-modal">
+                <img src="https://via.placeholder.com/300x200" alt="ИИ">
+                <h3>Искусственный интеллект (2010-е)</h3>
+                <p>Создатели: Google, OpenAI. Нейросети автоматизируют задачи и анализируют данные.</p>
+            </div>
+            <div class="card" data-modal="www-modal">
+                <img src="https://via.placeholder.com/300x200" alt="WWW">
+                <h3>Всемирная паутина (1989)</h3>
+                <p>Создатель: Тим Бернерс-Ли. Сделала интернет доступным через браузеры и гиперссылки.</p>
+            </div>
+            <div class="card" data-modal="gps-modal">
+                <img src="https://via.placeholder.com/300x200" alt="GPS">
+                <h3>GPS (1978)</h3>
+                <p>Создатель: Минобороны США. Изменила навигацию, логистику и геолокацию.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Участники -->
+    <section id="participants" class="section">
+        <h2>Участники цифровой революции</h2>
+        <div class="card-container">
+            <div class="card" data-modal="turing-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Алан Тьюринг">
+                <h3>Алан Тьюринг</h3>
+                <p>Основатель информатики, создал концепцию вычислительной машины, взломал "Энигму".</p>
+            </div>
+            <div class="card" data-modal="jobs-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Стив Джобс">
+                <h3>Стив Джобс</h3>
+                <p>Сооснователь Apple, разработал iPhone и Macintosh, изменил дизайн технологий.</p>
+            </div>
+            <div class="card" data-modal="gates-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Билл Гейтс">
+                <h3>Билл Гейтс</h3>
+                <p>Основатель Microsoft, создал Windows, сделал ПК массовым продуктом.</p>
+            </div>
+            <div class="card" data-modal="berners-lee-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Тим Бернерс-Ли">
+                <h3>Тим Бернерс-Ли</h3>
+                <p>Создатель WWW, сделал интернет доступным через браузеры.</p>
+            </div>
+            <div class="card" data-modal="intel-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Intel">
+                <h3>Intel</h3>
+                <p>Лидер в производстве микропроцессоров, основа современных компьютеров.</p>
+            </div>
+            <div class="card" data-modal="google-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Google">
+                <h3>Google</h3>
+                <p>Изменил доступ к информации через поиск, Android и ИИ.</p>
+            </div>
+            <div class="card" data-modal="openai-modal">
+                <img src="https://via.placeholder.com/300x200" alt="OpenAI">
+                <h3>OpenAI</h3>
+                <p>Пионер ИИ, создатель ChatGPT, продвинул обработку языка.</p>
+            </div>
+            <div class="card" data-modal="musk-modal">
+                <img src="https://via.placeholder.com/300x200" alt="Илон Маск">
+                <h3>Илон Маск</h3>
+                <p>Основатель Tesla, Neuralink, развивает ИИ и автономные технологии.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тест -->
+    <section id="quiz" class="section">
+        <h2>Тест: Какой этап цифровой революции тебе ближе?</h2>
+        <div class="quiz-container">
+            <div class="question" data-question="1">
+                <h3>Какой тип технологий тебя больше привлекает?</h3>
+                <label><input type="radio" name="q1" value="1940s"> Огромные компьютеры для расчетов</label>
+                <label><input type="radio" name="q1" value="1960s"> Сети и миниатюрные устройства</label>
+                <label><input type="radio" name="q1" value="1980s"> Персональные компьютеры</label>
+                <label><input type="radio" name="q1" value="2000s"> Смартфоны и интернет</label>
+                <label><input type="radio" name="q1" value="2020s"> Искусственный интеллект</label>
+            </div>
+            <div class="question" data-question="2">
+                <h3>Что ты ценишь в технологиях?</h3>
+                <label><input type="radio" name="q2" value="1940s"> Мощь и новизну</label>
+                <label><input type="radio" name="q2" value="1960s"> Связь и компактность</label>
+                <label><input type="radio" name="q2" value="1980s"> Доступность для всех</label>
+                <label><input type="radio" name="q2" value="2000s"> Удобство и мобильность</label>
+                <label><input type="radio" name="q2" value="2020s"> Интеллект и автоматизацию</label>
+            </div>
+            <div class="question" data-question="3">
+                <h3>Какой навык тебе ближе?</h3>
+                <label><input type="radio" name="q3" value="1940s"> Программирование на низком уровне</label>
+                <label><input type="radio" name="q3" value="1960s"> Создание сетей</label>
+                <label><input type="radio" name="q3" value="1980s"> Работа с интерфейсами</label>
+                <label><input type="radio" name="q3" value="2000s"> Разработка приложений</label>
+                <label><input type="radio" name="q3" value="2020s"> Обучение ИИ</label>
+            </div>
+            <div class="question" data-question="4">
+                <h3>Как ты используешь технологии?</h3>
+                <label><input type="radio" name="q4" value="1940s"> Для сложных расчетов</label>
+                <label><input type="radio" name="q4" value="1960s"> Для связи</label>
+                <label><input type="radio" name="q4" value="1980s"> Для работы</label>
+                <label><input type="radio" name="q4" value="2000s"> Для развлечений</label>
+                <label><input type="radio" name="q4" value="2020s"> Для автоматизации</label>
+            </div>
+            <div class="question" data-question="5">
+                <h3>Какой прорыв впечатляет тебя больше?</h3>
+                <label><input type="radio" name="q5" value="1940s"> Первый компьютер</label>
+                <label><input type="radio" name="q5" value="1960s"> Интернет</label>
+                <label><input type="radio" name="q5" value="1980s"> ПК для всех</label>
+                <label><input type="radio" name="q5" value="2000s"> Смартфоны</label>
+                <label><input type="radio" name="q5" value="2020s"> ИИ и квантовые компьютеры</label>
+            </div>
+            <button class="quiz-btn" data-modal="quiz-result-modal">Узнать результат</button>
+        </div>
+    </section>
+
+    <!-- Источники -->
+    <section id="sources" class="section">
+        <h2>Источники</h2>
+        <ul class="source-list">
+            <li>Айзексон, У. (2014). Инноваторы: Как группа хакеров, гениев и гиков совершила цифровую революцию.
+                Москва: АСТ.</li>
+            <li>Кэмпбелл-Келли, М. (2003). История компьютеров. Лондон: Oxford University Press.</li>
+            <li>Статья: "История интернета" (2020). Scientific American.</li>
+            <li>Биография Стива Джобса (2011). Автор: У. Айзексон. Москва: АСТ.</li>
+            <li>Статистика роста интернета (2023). Internet World Stats.</li>
+            <li>Церни, Т. (2013). Как работает интернет. Нью-Йорк: Penguin Books.</li>
+            <li>Статья: "Эволюция ИИ" (2022). Nature.</li>
+            <li>Гордон, М. (2018). История микропроцессоров. IEEE Spectrum.</li>
+            <li>Документы ARPANET (1969). DARPA Archives.</li>
+            <li>Статистика пользователей смартфонов (2024). Statista.</li>
+        </ul>
+    </section>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="intro-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>История цифровой революции</h3>
+            <p>Цифровая революция преобразовала мир, изменив экономические и социальные структуры. Она началась с
+                автоматизации научных расчетов, ускорила глобализацию через интернет и создала новые профессии, такие
+                как разработка ПО и анализ данных. Это не только технологический прогресс, но и культурный сдвиг, где
+                информация стала ключевым ресурсом, а цифровые платформы изменили способы общения и потребления
+                контента.</p>
+        </div>
+    </div>
+    <div class="modal" id="stat1-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>5.4 миллиарда пользователей интернета</h3>
+            <p>К 2025 году более 65% населения Земли подключено к интернету, что стало возможным благодаря развитию
+                сетевых технологий и доступности смартфонов.</p>
+        </div>
+    </div>
+    <div class="modal" id="stat2-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>8.5 миллиарда подключенных устройств</h3>
+            <p>Интернет вещей (IoT) объединяет миллиарды устройств, от умных часов до промышленных сенсоров, формируя
+                цифровую экосистему.</p>
+        </div>
+    </div>
+<!-- Модальные окна для этапов -->
+<div class="modal" id="stage1-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>1940-е: Первые компьютеры</h3>
+        <p>Эпоха гигантских электронных машин, работавших на вакуумных лампах. ENIAC (1945) весил 27 тонн и выполнял 5000 операций в секунду. Colossus (1943) использовался для взлома немецких шифров во время Второй мировой войны. Программирование осуществлялось переключением проводов и перфокартами.</p>
+        <img src="https://via.placeholder.com/300x200?text=ENIAC+1940s" alt="ENIAC">
+    </div>
+</div>
+
+<div class="modal" id="stage2-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>1950-е: Транзисторы и языки программирования</h3>
+        <p>Изобретение транзистора (1947) революционизировало электронику. Появились первые языки программирования высокого уровня - Fortran (1957) и COBOL (1959). IBM 704 (1954) - первый массовый компьютер с поддержкой арифметики с плавающей запятой. Начало коммерческого использования компьютеров в бизнесе.</p>
+        <img src="https://via.placeholder.com/300x200?text=Transistors+1950s" alt="Транзисторы">
+    </div>
+</div>
+
+<div class="modal" id="stage3-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>1960-е: Интегральные схемы и сети</h3>
+        <p>Изобретение интегральных схем (1958) позволило уменьшить размеры компьютеров. Создание ARPANET (1969) - предшественника интернета. Появление первых операционных систем. IBM System/360 (1964) - семейство совместимых компьютеров. Разработка языка BASIC (1964) для обучения программированию.</p>
+        <img src="https://via.placeholder.com/300x200?text=Integrated+Circuits+1960s" alt="Интегральные схемы">
+    </div>
+</div>
+
+<div class="modal" id="stage4-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>1970-е: Персональные компьютеры</h3>
+        <p>Altair 8800 (1975) - первый массовый ПК. Apple I (1976) и Apple II (1977) - первые успешные домашние компьютеры. Создание Microsoft (1975) и Apple (1976). Разработка языков C (1972) и SQL (1974). Появление первых микропроцессоров (Intel 4004, 1971).</p>
+        <img src="https://via.placeholder.com/300x200?text=Apple+I+1970s" alt="Apple I">
+    </div>
+</div>
+
+<div class="modal" id="stage5-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>1980-е: Компьютеры для всех</h3>
+        <p>IBM PC (1981) стал отраслевым стандартом. Macintosh (1984) представил графический интерфейс и мышь. Microsoft Windows 1.0 (1985). Появление компакт-дисков (1982). Развитие локальных сетей. Первые ноутбуки (Osborne 1, 1981). Создание интернет-доменов (.com, 1985).</p>
+        <img src="https://via.placeholder.com/300x200?text=IBM+PC+1980s" alt="IBM PC">
+    </div>
+</div>
+
+<div class="modal" id="stage6-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>1990-е: Интернет-революция</h3>
+        <p>Всемирная паутина (WWW, 1991) сделала интернет доступным. Первые браузеры (Mosaic, Netscape). Поисковые системы (Yahoo, 1994; Google, 1998). Электронная коммерция (Amazon, 1995; eBay, 1995). Мобильные телефоны начинают набирать популярность. Linux (1991) - начало open-source движения.</p>
+        <img src="https://via.placeholder.com/300x200?text=WWW+1990s" alt="Всемирная паутина">
+    </div>
+</div>
+
+<div class="modal" id="stage7-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>2000-е: Мобильная и социальная эра</h3>
+        <p>iPhone (2007) начал смартфонную революцию. Социальные сети (Facebook, 2004; Twitter, 2006). Облачные вычисления (AWS, 2006). Web 2.0 - интерактивные сайты. Википедия (2001). YouTube (2005). Android (2008). Широкое распространение Wi-Fi и мобильного интернета.</p>
+        <img src="https://via.placeholder.com/300x200?text=iPhone+2000s" alt="iPhone">
+    </div>
+</div>
+
+<div class="modal" id="stage8-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>2010-е: Большие данные и IoT</h3>
+        <p>Искусственный интеллект (Siri, 2011; Alexa, 2014). Интернет вещей (IoT). Большие данные и аналитика. Блокчейн и криптовалюты (Bitcoin, 2009; Ethereum, 2015). Глубокое обучение (AlphaGo, 2016). 5G сети. Виртуальная и дополненная реальность (Oculus Rift, 2012; Pokémon Go, 2016).</p>
+        <img src="https://via.placeholder.com/300x200?text=AI+2010s" alt="Искусственный интеллект">
+    </div>
+</div>
+
+<div class="modal" id="stage9-modal">
+    <div class="modal-content">
+        <span class="modal-close">×</span>
+        <h3>2020-е: ИИ и квантовые вычисления</h3>
+        <p>Генеративный ИИ (ChatGPT, 2022; DALL-E). Квантовые компьютеры (Google Sycamore, 2019). Метавселенные. Автономные системы и роботы. ИИ в медицине и науке. Этика технологий и регулирование ИИ. Устойчивые вычисления. Персональные ИИ-ассистенты.</p>
+        <img src="https://via.placeholder.com/300x200?text=Quantum+2020s" alt="Квантовые вычисления">
+    </div>
+</div>
+    <div class="modal" id="stat7-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>90% цифровизация бизнеса</h3>
+            <p>К 2025 году 90% компаний используют облачные технологии для управления данными и процессами.</p>
+        </div>
+    </div>
+    <div class="modal" id="stat8-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1 триллион транзисторов</h3>
+            <p>Современные чипы, такие как Apple M2, содержат до 1 триллиона транзисторов на кристалле.</p>
+        </div>
+    </div>
+    <div class="modal" id="stat9-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1956: Первый жесткий диск</h3>
+            <p>IBM 350 весил тонну и хранил всего 3.75 МБ данных на 50 дисках.</p>
+        </div>
+    </div>
+    <div class="modal" id="stat10-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>4.8 зеттабайт данных</h3>
+            <p>К 2025 году ежегодно создается 4.8 зеттабайт данных, что эквивалентно 4.8 трлн гигабайт.</p>
+        </div>
+    </div>
+    <div class="modal" id="usa-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>США: Колыбель цифровой революции</h3>
+            <p>США подарили миру ENIAC (1945), ARPANET (1969), персональные компьютеры IBM и Apple, а также смартфоны.
+                Кремниевая долина стала центром инноваций, где родились Intel, Microsoft и Google, определившие развитие
+                технологий.</p>
+        </div>
+    </div>
+    <div class="modal" id="europe-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Европа: Основы и стандарты</h3>
+            <p>Европа дала миру WWW (Тим Бернерс-Ли, CERN, 1989) и ранние компьютеры, такие как Zuse Z3 (1941).
+                Европейские стандарты, такие как GSM, сформировали мобильную связь, а исследования в ИИ укрепляют
+                позиции региона.</p>
+        </div>
+    </div>
+    <div class="modal" id="asia-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Азия: Производство и инновации</h3>
+            <p>Азия лидирует в производстве полупроводников (TSMC, Samsung) и разработке смартфонов (Huawei, Xiaomi).
+                Япония внесла вклад через Sony и Nintendo, а Китай продвигает ИИ и 5G, формируя будущее технологий.</p>
+        </div>
+    </div>
+    <div class="modal" id="stage1-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1940-е: Зарождение компьютеров</h3>
+            <p>Электронные компьютеры, такие как ENIAC (1945), ускорили научные и военные расчеты, заменив механические
+                устройства. Они потребляли огромное количество энергии и требовали ручного программирования через
+                перфокарты. Эта эпоха заложила основы автоматизации, повлияв на развитие науки и промышленности.</p>
+            <img src="https://via.placeholder.com/300x200" alt="ENIAC">
+        </div>
+    </div>
+    <div class="modal" id="stage2-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1960-е: Миниатюризация и сети</h3>
+            <p>Транзисторы уменьшили размеры компьютеров, а интегральные схемы повысили их производительность. ARPANET
+                (1969) стал первым шагом к интернету, связав научные центры. Эта эпоха также дала начало языкам
+                программирования, таким как COBOL, упрощая разработку ПО.</p>
+            <img src="https://via.placeholder.com/300x200" alt="ARPANET">
+        </div>
+    </div>
+    <div class="modal" id="stage3-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>1980-е: Персональные компьютеры</h3>
+            <p>IBM PC и Apple Macintosh сделали компьютеры доступными для масс. Графические интерфейсы и мышь упростили
+                взаимодействие, а Microsoft Windows усилила конкуренцию. ПК начали проникать в офисы и дома, изменив
+                подход к работе и обучению.</p>
+            <img src="https://via.placeholder.com/300x200" alt="IBM PC">
+        </div>
+    </div>
+    <div class="modal" id="stage4-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>2000-е: Интернет и мобильность</h3>
+            <p>Широкополосный интернет и iPhone (2007) создали мобильную революцию. Социальные сети, такие как Facebook,
+                объединили миллиарды пользователей. Облачные технологии позволили хранить данные удаленно, изменив
+                подход к управлению информацией.</p>
+            <img src="https://via.placeholder.com/300x200" alt="iPhone">
+        </div>
+    </div>
+    <div class="modal" id="stage5-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>2020-е: Искусственный интеллект</h3>
+            <p>ИИ стал ключевой технологией, автоматизируя процессы в медицине, транспорте и финансах. Квантовые
+                компьютеры обещают революцию в вычислениях. Эта эпоха фокусируется на устойчивом развитии и этике
+                технологий, формируя будущее человечества.</p>
+            <img src="https://via.placeholder.com/300x200" alt="AI">
+        </div>
+    </div>
+    <div class="modal" id="transistor-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Транзистор (1947)</h3>
+            <p>Изобретение транзистора позволило создавать портативные радиоприемники и телевизоры, а позже —
+                компьютеры. Его компактность и надежность снизили энергопотребление, что сделало возможным массовое
+                производство электроники.</p>
+        </div>
+    </div>
+    <div class="modal" id="microprocessor-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Микропроцессор (1971)</h3>
+            <p>Intel 4004 содержал 2300 транзисторов и выполнял 60 000 операций в секунду. Его разработка сделала
+                возможным создание доступных ПК и встроенных систем для бытовой техники.</p>
+        </div>
+    </div>
+    <div class="modal" id="pc-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Персональный компьютер (1981)</h3>
+            <p>IBM PC использовал процессор Intel 8088 и ОС MS-DOS, что позволило сторонним разработчикам создавать
+                совместимое ПО и оборудование, ускорив распространение ПК.</p>
+        </div>
+    </div>
+    <div class="modal" id="internet-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Интернет (1969)</h3>
+            <p>Протокол TCP/IP, разработанный Винтом Серфом и Бобом Каном, обеспечил надежную передачу данных, что стало
+                основой для масштабирования интернета в 1980-х.</p>
+        </div>
+    </div>
+    <div class="modal" id="smartphone-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Смартфон (2007)</h3>
+            <p>iPhone объединил сенсорный интерфейс, интернет и мультимедиа. App Store создал экосистему приложений,
+                которая породила такие сервисы, как Uber и Instagram.</p>
+        </div>
+    </div>
+    <div class="modal" id="ai-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Искусственный интеллект (2010-е)</h3>
+            <p>Глубокое обучение позволило ИИ распознавать изображения, переводить языки и управлять роботами. Это
+                привело к созданию автономных систем и персонализированных сервисов.</p>
+        </div>
+    </div>
+    <div class="modal" id="www-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Всемирная паутина (1989)</h3>
+            <p>WWW, основанная на HTTP и HTML, позволила пользователям легко обмениваться информацией. Первый веб-сайт
+                CERN был запущен в 1991 году.</p>
+        </div>
+    </div>
+    <div class="modal" id="gps-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>GPS (1978)</h3>
+            <p>Система из 24 спутников обеспечила точность навигации до 5 метров, став незаменимой для транспорта,
+                картографии и военных операций.</p>
+        </div>
+    </div>
+    <div class="modal" id="turing-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Алан Тьюринг</h3>
+            <p>Его работа над машиной Тьюринга создала теоретическую основу для современных компьютеров. Взлом "Энигмы"
+                сократил Вторую мировую войну на годы.</p>
+        </div>
+    </div>
+    <div class="modal" id="jobs-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Стив Джобс</h3>
+            <p>Джобс сделал акцент на минималистичный дизайн и интуитивные интерфейсы, что сделало Apple лидером в
+                инновациях и создало культовый статус бренда.</p>
+        </div>
+    </div>
+    <div class="modal" id="gates-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Билл Гейтс</h3>
+            <p>Windows и Microsoft Office стали стандартом для ПК, а филантропическая деятельность Гейтса через фонд
+                Билла и Мелинды Гейтс изменила здравоохранение.</p>
+        </div>
+    </div>
+    <div class="modal" id="berners-lee-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Тим Бернерс-Ли</h3>
+            <p>Бернерс-Ли сделал WWW бесплатной и открытой, что позволило интернету стать глобальной платформой для
+                обмена знаниями и коммерции.</p>
+        </div>
+    </div>
+    <div class="modal" id="intel-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Intel</h3>
+            <p>Процессоры Intel, такие как Pentium, обеспечили рост производительности ПК, а их архитектура x86 остается
+                стандартом для большинства компьютеров.</p>
+        </div>
+    </div>
+    <div class="modal" id="google-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Google</h3>
+            <p>Алгоритм PageRank сделал поиск Google самым точным, а проекты, такие как Google Maps и DeepMind,
+                расширили его влияние на технологии.</p>
+        </div>
+    </div>
+    <div class="modal" id="openai-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>OpenAI</h3>
+            <p>ChatGPT и DALL-E продемонстрировали потенциал ИИ в создании текста и изображений, вызвав глобальный
+                интерес к генеративным моделям.</p>
+        </div>
+    </div>
+    <div class="modal" id="musk-modal">
+        <div class="modal-content">
+            <spanstiftung class="modal-close">×</span>
+                <h3>Илон Маск</h3>
+                <p>Neuralink и Starlink Маск стремятся соединить мозг с компьютерами и обеспечить глобальный интернет,
+                    раздвигая границы технологий.</p>
+        </div>
+    </div>
+    <div class="modal" id="quiz-result-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Ваш результат</h3>
+            <p id="result-text"></p>
+            <img id="result-image" src="https://via.placeholder.com/300x200" alt="Result">
+        </div>
+    </div>
+    <div class="modal" id="quiz-error-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Ошибка</h3>
+            <p>Пожалуйста, ответьте на все вопросы!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
