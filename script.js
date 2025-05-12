@@ -7,6 +7,13 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 
+// Плавная прокрутка для главной кнопки
+document.getElementById('begin-button').addEventListener('click', function (e) {
+    e.preventDefault();
+    const section = document.querySelector(this.getAttribute('href'));
+    section.scrollIntoView({ behavior: 'smooth' });
+})
+
 // Открытие модальных окон
 document.querySelectorAll('[data-modal]').forEach(item => {
     item.addEventListener('click', () => {
