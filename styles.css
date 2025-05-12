@@ -55,7 +55,6 @@ body {
 /* Главная секция */
 .hero {
     height: 100vh;
-    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

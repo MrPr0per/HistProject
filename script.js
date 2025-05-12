@@ -51,36 +51,6 @@ document.querySelectorAll('.modal').forEach(modal => {
     });
 });
 
-// Интерактивная карта
-const regions = document.querySelectorAll('.region');
-const tooltip = document.querySelector('.tooltip');
-
-regions.forEach(region => {
-    region.addEventListener('mousemove', e => {
-        tooltip.style.display = 'block';
-        tooltip.textContent = region.dataset.tooltip;
-        tooltip.style.left = `${e.pageX + 10}px`;
-        tooltip.style.top = `${e.pageY + 10}px`;
-    });
-
-    region.addEventListener('mouseleave', () => {
-        tooltip.style.display = 'none';
-    });
-
-    // Поддержка касаний для мобильных устройств
-    region.addEventListener('touchstart', e => {
-        e.preventDefault();
-        tooltip.style.display = 'block';
-        tooltip.textContent = region.dataset.tooltip;
-        const touch = e.touches[0];
-        tooltip.style.left = `${touch.pageX + 10}px`;
-        tooltip.style.top = `${touch.pageY + 10}px`;
-        setTimeout(() => {
-            tooltip.style.display = 'none';
-        }, 2000); // Подсказка исчезает через 2 секунды
-    });
-});
-
 // Тест
 const quizBtn = document.querySelector('.quiz-btn');
 const resultModal = document.getElementById('quiz-result-modal');
@@ -126,31 +96,31 @@ quizBtn.addEventListener('click', () => {
     const results = {
         '1940s': {
             text: '1940-е: Эра зарождения компьютеров. Ты восхищаешься пионерами, которые создали первые вычислительные машины, такие как ENIAC, и заложили основы цифровой эры. Твоя страсть к истокам технологий делает тебя исследователем фундаментальных открытий, которые изменили мир.',
-            image: 'https://via.placeholder.com/300x200'
+            image: 'https://ethnomir.ru/upload/medialibrary/e69/comp.jpg'
         },
         '1950s-60s': {
             text: '1950-е–1960-е: Эпоха транзисторов и первых сетей. Ты ценишь переход от громоздких ламп к компактным транзисторам и рождение сетей, таких как ARPANET. Твое любопытство к инновациям, связавшим мир, делает тебя мечтателем о глобальной связности.',
-            image: 'https://via.placeholder.com/300x200'
+            image: 'https://hi-news.ru/wp-content/uploads/2012/11/ibm_7090.jpeg'
         },
         '1960s': {
             text: '1960-е: Время миниатюризации и сетей. Ты вдохновляешься изобретением интегральных схем и первыми шагами интернета. Твоя любовь к компактным технологиям и сетевым решениям говорит о твоем стремлении к эффективности и связи.',
-            image: 'https://via.placeholder.com/300x200'
+            image: 'https://i.pinimg.com/736x/57/fe/ab/57feab662a3ca237f113ff3e48193458.jpg'
         },
         '1970s-80s': {
             text: '1970-е–1980-е: Золотой век персональных компьютеров. Ты увлечен эпохой, когда ПК, такие как IBM PC и Macintosh, стали доступны каждому. Твой интерес к массовым технологиям и интерфейсам делает тебя сторонником демократизации инноваций.',
-            image: 'https://via.placeholder.com/300x200'
+            image: 'https://www.digitaltrends.com/wp-content/uploads/2020/01/applemacintoshhello.jpg?fit=720%2C480&p=1'
         },
         '1980s': {
             text: '1980-е: Эра персональных компьютеров. Ты обожаешь время, когда компьютеры вошли в дома и офисы, а графические интерфейсы сделали их удобными. Твоя страсть к доступным технологиям показывает твое желание сделать мир проще и продуктивнее.',
-            image: 'https://via.placeholder.com/300x200'
+            image: 'https://www.holistic.it/wp-content/uploads/2021/07/bigstock-Istanbul-Turkey-March-314053039.jpg'
         },
         '2000s': {
             text: '2000-е: Мобильная революция и интернет. Ты живешь в ритме смартфонов, соцсетей и облачных технологий. Твой энтузиазм к iPhone и Facebook отражает твое стремление к мобильности, общению и мгновенному доступу к информации.',
-            image: 'https://via.placeholder.com/300x200'
+            image: 'https://cdn.prod.website-files.com/5d249063a5dbec3c6f57a8d4/63a47e722f6c099cb1761466_Smartphone%20History.jpg'
         },
         '2020s': {
             text: '2020-е: Эпоха ИИ и квантовых технологий. Ты устремлен в будущее, где ИИ и квантовые компьютеры переопределяют возможности. Твоя страсть к автоматизации и интеллектуальным системам делает тебя визионером, готовым к новым горизонтам технологий.',
-            image: 'https://via.placeholder.com/300x200'
+            image: 'https://www.researchgate.net/publication/332170881/figure/fig1/AS:743484197724163@1554271854842/sualization-of-intermediate-outputs-generated-by-the-trained-CNN-Image-of-tomato-leaf.png'
         }
     };
 
